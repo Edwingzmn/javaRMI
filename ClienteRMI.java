@@ -67,8 +67,8 @@ public class ClienteRMI {
     double[][] B2 = separa_matriz(B, N / 2);
 
     // obtiene una referencia que "apunta" al objeto remoto asociado a la URL
-    InterfaceRMI nodo1 = (InterfaceRMI) Naming.lookup("rmi://localhost/multmatrix");
-    InterfaceRMI nodo2 = (InterfaceRMI) Naming.lookup("rmi://localhost/multmatrix");
+    InterfaceRMI nodo1 = (InterfaceRMI) Naming.lookup("rmi://20.249.12.70/multiplicamatrix");
+    InterfaceRMI nodo2 = (InterfaceRMI) Naming.lookup("rmi://51.132.219.159/multiplicamatrix");
 
     // Multiplica las matrices
     double[][] C1 = nodo1.multiplica_matrices(A1, B1);
